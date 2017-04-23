@@ -1,0 +1,53 @@
+body {
+	background: rgba(0, 255, 255, 0.4);
+
+}
+
+/*Навигация*/
+
+header {
+	height: 70px;
+	width: 100%;
+	background-color: #00BFFF;
+	padding-top: 20px;
+	
+}
+#navigation {
+	padding-left: 25%;
+
+}
+
+nav {
+
+	/*border: 1px solid black;*/
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+	display: inline-block;
+	min-width: 160px;
+
+	font-family: 'Times New Roman', Arial, sans-serif;
+	font-size: 30pt;
+	text-align: center;
+}
+nav:hover {
+	background-color: white;
+}
+/* конец навигации*/
+
+/*информация о товарах */
+
+.product-info {
+	
+	text-align: center;
+	border: 1px solid black;
+}
+
+
+
+footer {
+	height: 70px;
+	width: 100%;
+	background-color: #00BFFF;
+	padding-top: 20px;
+}
