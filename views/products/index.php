@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Сайт продажи лодочек</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/template/css/styles.css">
-</head>
-<body>
-<header>
-	<div id='navigation'>
-		<nav>Главная</nav>
-		<nav>Каталог</nav>
-		<nav>Контакты</nav>
-	</div>
-</header>
+<?php require_once ROOT.'/layouts/header.php' ?>
 	
 <?php foreach ($productList as $product):?> {
 	<div class="product-info">
@@ -24,8 +10,4 @@
 	</div>
 
 <?php endforeach;?>
-<footer>
-	
-</footer>
-</body>
-</html>
+<?php require_once ROOT.'/layouts/footer.php' ?>

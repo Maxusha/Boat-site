@@ -30,10 +30,13 @@ class Router
 						
 						//определить контроллер, action, параметры
 						$segments = explode('/', $internalRoute);
+						
 						$controllerName = array_shift($segments).'Controller';
+
 						$controllerName = ucfirst($controllerName);
 						
 						$actionName = 'action'.ucfirst(array_shift($segments));
+						
 
 						$parameters = $segments;
 						//подключить файл класса контроллера
@@ -46,6 +49,7 @@ class Router
 
 						//создаем объект и вызываем метод (action)
 						$controllerObject = new $controllerName;
+
 						$result = call_user_func_array(array($controllerObject, $actionName), $parameters);
 						if ($result != NULL){
 							break;
