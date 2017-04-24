@@ -19,10 +19,7 @@ class ProductController
 			{
 		if ($id) {
 			$ProductPage = Products::getProductById($id);
-		echo '<pre>';
-		//die(var_dump($ProductPage));
-		print_r($ProductPage);
-		echo '<pre>';
+		require_once ROOT.'/views/products/view.php';
 		return true;
 	}
 
